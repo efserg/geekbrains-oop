@@ -11,7 +11,7 @@ public class Outer {
     }
 
     private void method1() {
-        class LocalClass {
+        class LocalClass { // локальный класс
             private int a;
             public void m2() {
 
@@ -27,7 +27,7 @@ public class Outer {
     private static void staticMethod() {
 
     }
-    public class Inner {
+    public class Inner { // внутренний класс
         // имеет доступ ко всем переменным и методам внешнего класса
         public Inner() {
             System.out.println("Inner");
@@ -38,7 +38,7 @@ public class Outer {
         }
     }
 
-    public static class StaticInner {
+    public static class StaticInner { // вложенный класс
         // имеет доступ ко всем статическим переменным и методам внешнего класса
         public StaticInner() {
             System.out.println("StaticInner");
